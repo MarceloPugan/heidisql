@@ -1,0 +1,120 @@
+# heidisql
+
+heidiSQL
+
+plataforma gratuita
+
+1 - instalação
+
+- baixe o programa;
+- marcar "eu aceito";
+- maque "proximo","instalar" e concluir;
+
+2 - Criar sessões
+
+- clicar em "nova";
+- nome da seção(como exemplo, "localhost");
+- Servidor/IP: 127.0.0.1(se for local);
+- usuáiro(escolha o nome que preferir);
+- senha, a que preferir;
+- clicar com o botão direito do mouse em "localhost";
+	- clique em "Criar novo";
+		- clique em "Banco de dados";
+		- escreva o nome do banco;
+		- clique me ok;
+
+3 - Criar tabelas e atributos
+
+- clicar com o botão direito, na base sessão criada;
+- clicar em "criar novo";
+- clicar em "criar tabela";
+	- Adicionar;
+	- alterar "nome" sendo uma string;
+	- alterar "Tipo de dados"(podendo ser "string", "int", "var", "date");
+	- alterar tamanho;
+
+4 - Criar chaves primairas quanto as estrageiras
+
+# Criando chave primaria # (é uma informação unica. Ex.: CPF)
+
+- Dentro da sessão criada, clique com o botão direito do mouse no item da lista "Nome"
+- Clique "Criar novo index"
+- Escolha o tipo de chave para vincular ao item;
+- Na coluna "Padrão", da opção "NULL", mude para a opção "AUTO_INCREMENT" 
+Obs.: a chave estrageira se mostra pelo simbolo de um chave na coluna "#"
+
+# Essas opções acima, são para a criação de uma chave simples dentro da base de dados para segurança #
+
+# Criando chave extrangeira (aquela informação que você pega de outras tabelas) #
+
+- Na caixa do canto superior;
+- Clique no item "Chave-estrageira";
+- Na Janela subordinada, escolha pela coluna "Colunas re..." a coluna que você quer definir a chave;
+Obs.: a chave estrageira se mostra pelo simbolo de um chave verde.
+
+5 - Filtragem de registro
+
+# adicionando dados e filtragem especifica para encontrar objeto #
+
+- Clicando na tabela da sessão;
+- Clique na coluna "Dados";
+- Adione/Altere os dados apresentados em sua sessão;
+- Clique no botão "Filtro"(no canto superior direito);
+- Na caixa ao lado esquerdo, escreva diretamente a coluna(as letras aparecem em amarelo) e objeto(verde);
+
+# Filtro Rápido #
+
+- Clique com o botão direito do mouse no objeto, e vá na opção "Filtro Rápido" que dará uma série de opções para filtragem;
+- Após escolher uma das opções, abrirá uma caixa, que permitirá escrever o que procura;
+
+6 - Criação de usuários 
+
+- Clicar no icone no canto supeiror esquerdo (parece dois bonequinhos);
+- Clicar em "Adicionar";
+- Definir os dados(usuário, servidor, senha) na janela "credenciais" (a direita da lista de usuários);
+- Permitir acesso (definir os privilégios), na janela abaixo da janela "credenciais";
+- Clicar em "Salvar";
+
+7 - Exportação e importação de dados de tabelas
+
+# Exportação #
+
+- Clique dentro da janela de dados com o botão direito do mouse em um dos elementos;
+- Clique na opção "Exportar regisitro da lista";
+- Defina "formato de saída"(para definir o tipo de arquivo);
+- Defina "Seleção de registro"(para definir os elementos a serem exportados);
+- Defina "Destino" para definir onde será feito o download dos dados;
+- Defina as "opções";
+- Após isso, clique em "Salvar ajustes" e depois clique em "ok"; 
+
+# Importação #
+
+- Clique na aba "Ferramentas" na primeira barra superior do programa ao lado esquerdo;
+- Clique em "Importar arquivo CSV";
+- Na caixa "Nome do arquivo", clique no icone da pasta, para importar o arquivo que contém os dados;
+- Defina "Método"(Recomendado escolher a opção "O cliente vai ler o conteúdo do arquivo");
+- Clique em "Importar!"
+- Na sessão onde realizou a importação, atualiza a janela, seja clicando no botão "atualizar"(uma seta em espiral verde) ou clicando na tecla "F5";
+
+8 - Backup e importação de banco de dados
+
+# Realizando o backup #
+
+- Clique na aba "Ferramentas" na primeira barra superior do programa ao lado esquerdo;
+- Clique em "Exportar banco de dados como SQL";
+- Na janela "Ferramentas de tabela", escolha as sessões que queira fazer o backup;
+- Na aba "Exportar SQL" no lado superior direito, defina se quer "Criar" ou "Eliminar" os banco de dados e tabelas;
+- Defina os caixa "Dados", o que ocorrerá com seu backup(Ex.: sem dados, remover e inserir, inserir, ignorar ou substituir);
+- Defina o "Tamanho máximo", a forma de "Saída" do arquivo;
+- Escolha o nome na caixa "Nome do arquivo" e o local que será feito o download no icone da pasta ao lado da caixa;
+- Clique em "Exportar"
+
+# Importando o backup #
+
+- Clique no backup realizado(no arquivo com icone do "heidiSQL");
+- Defina a seção que quer abrir o backup, com o usuário e senha;
+- Clique em "Abrir";
+- Clique na "seta azul"(Executar);
+- Atualize a sessão, para confirmar o aparecimento da tabela.
+
+  
